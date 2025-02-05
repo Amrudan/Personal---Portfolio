@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400&display=swap');
+
+:root {
+    --primary-color: #f9532d;
+    --primary-font: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: #0d1117;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #0d1117;
+    color: white;
+}
+
+.page-header .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.page-header ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    
+}
+
+.page-header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.page-header ul li a.active,
+.page-header ul li a:hover {
+    color: var(--primary-color);
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.social a {
+    color: #333333;
+    font-size: 24px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.social a:hover {
+    color: var(--primary-color);
+}
+
+.detail h1 span {
+    color: var(--primary-color);
+}
+
+.detail .btn a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #ff0080, #7928ca);
+    color: white;
+    border-radius: 25px;
+    transition: transform 0.3s;
+}
+
+.detail .btn a:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b001e;
+    margin-top: 80px;
+}
+
+.footer p {
+    margin: 0;
+    color: #999999;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #999999;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    color: #333333;
+}
+
+.container {
+    padding: 0 8.4rem;
+}
+
+.img-w {
+    width: 100%;
+}
+
+.text-color {
+    background: #F7086C;
+    background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #0d1117;  
+    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.3);          
+}
+
+li a {
+    color: white;  
+   
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    animation: leftSideAni 1s ease forwards;
+}
+
+.logo a {
+    color: #333333;
+    text-decoration: none;
+}
+
+ul {
+    display: flex;
+    gap: .6rem;
+    list-style-type: none;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+li a {
+    display: inline-block;
+    padding: .3rem 1rem;
+    color: black;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    border-radius: 36px;
+    line-height: 2;
+    transition: .3s;
+    animation: navani .3s ease forwards;
+    animation-delay: calc(.15s * var(--navAni));
+}
+
+ul li a {
+    position: relative;
+}
+
+ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 2rem);
+    height: 3px;
+    background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
+}
+
+ul li a::before {
+    transform: scale(0, 1);
+    transition: transform .3s ease;
+}
+
+ul li a:hover::before {
+    transform: scale(1, 1);
+}
+
+li a.active {
+    background: #F7086C;
+    background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+li a:hover {
+    background: #F7086C;
+    background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 6% repeat(auto-fit, minmax(277px, 1fr));
+    row-gap: 2rem;
+    align-items: center;
+}
+
+.main h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    animation: rightSideAni 1s ease forwards;
+}
+
+.main h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    animation: topSideAni 1s ease forwards;
+}
+
+.main p {
+    line-height: 1.7;
+    font-size: 1.15rem;
+    animation: btn-ani 1s ease forwards;
+    animation-delay: .2s;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+}
+
+.social a {
+    background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border: 1.6px solid;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    padding: 0.39rem;
+    text-align: center;
+    animation: SocialAni 1s ease forwards;
+    animation-delay: calc(.2s * var(--socialAni));
+}
+
+.social a:hover {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+    background: linear-gradient(90deg, rgba(255,95,109,1) 0%, rgba(53,201,252,1) 100%);
+    box-shadow: 0 0 20px;
+    transition: all .3s ease-in-out;
+}
+
+.detail span {
+    background: #F7086C;
+    background: linear-gradient(to right, #F7086C 0%, #35c9fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-section,
+.internship-experience {
+    margin-left: 7%;
+    margin-top: 6%;
+    
+}
+
+.about-section h2,
+.internship-experience h2 {
+    font-size: 40px;
+    color: peru;
+}
+
+.intern-details {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.intern-details1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.intern-column {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 40%;
+}
+
+.intern-column h3 {
+    font-size: 24px;
+    color: darkorange;
+}
+
+.intern-column p {
+    font-size: 16px;
+    color: white;
+}
+/* Skills section */
+.skills-section {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.skills-section h2 {
+    
+    text-align: center;
+    font-size: 40px;
+    color: peru;
+}
+
+.skills-list {
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    list-style-type: square;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.skills-list li {
+    grid-template-columns: repeat(2, 1fr); /* Two items per row */
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+.projects-section {
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.projects-section h2 {
+    text-align: center;
+    font-size: 40px;
+    color: peru;
+}
+.projects{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.projects1 {
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+}
+.project-box {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 50%;
+}
+
+.project-box h3 {
+    font-size: 24px;
+    color: darkorange;
+}
+
+.project-box p {
+    font-size: 16px;
+    color: white;
+}
+
+
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    color: peru;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto; /* Centering the contact-info container */
+    background-color: #333;
+    color: white;
+    border-radius: 8px;
+    text-align: center; /* Align text to the left */
+}
+
+.contact-info h3 {
+    font-size: 24px;
+    color: darkorange;
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+/* Use CSS Grid for the contact info list to make it 2 items per row */
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px;
+    justify-items: start;
+}
+
+.contact-info ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-info ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: darkorange;
+}
